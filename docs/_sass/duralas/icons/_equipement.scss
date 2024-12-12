@@ -1,0 +1,206 @@
+.icon {
+  //region    -- Armes
+  &-dagger::before {
+    content: url(https://wiki.guildwars2.com/images/3/3a/Iron_Dagger.png);
+  }
+  &-claw::before {
+    content: url(https://i.ibb.co/z2DtHyW/inv-weapon-hand-21.jpg);
+  }
+  &-cesta::before {
+    content: url(https://wow.zamimg.com/images/wow/icons/large/inv_gauntlets_17.jpg);
+  }
+  &-slingshot::before {
+    content: url(https://wiki-fr.guildwars2.com/images/4/4c/Fronde.png);
+  }
+  &-bow::before {
+    content: url(https://wiki.guildwars2.com/images/9/9c/Soft_Wood_Short_Bow.png);
+  }
+  &-crossbow::before {
+    content: url(https://i.ibb.co/RQTQBss/inv-weapon-crossbow-04.jpg);
+  }
+  &-tonfa::before {
+    content: url(https://i.ibb.co/1LvwHPM/ability-sap.jpg);
+  }
+  &-flail::before {
+    content: url(https://i.ibb.co/jGmKgPP/inv-mace-1h-pandung-c-01.jpg);
+  }
+  &-sword::before {
+    content: url(https://wiki.guildwars2.com/images/6/68/Fine_Sword.png);
+  }
+  &-spear::before {
+    content: url(https://wiki.guildwars2.com/images/6/6a/Steel_Spear.png);
+  }
+  &-axe::before {
+    content: url(https://wiki.guildwars2.com/images/d/da/Mithril_Axe.png);
+  }
+  &-scythe::before {
+    content: url(https://i.ibb.co/7GyWtb9/inv-staff-78.jpg);
+  }
+  &-mace::before {
+    content: url(https://wiki.guildwars2.com/images/a/aa/Basic_Mace.png);
+  }
+  &-hammer::before {
+    content: url(https://wiki.guildwars2.com/images/c/c8/Bronze_Hammer.png);
+  }
+  &-staff-arcanic::before {
+    content: url(https://wiki.guildwars2.com/images/6/63/Soft_Wood_Staff.png);
+  }
+  &-staff-ether::before {
+    content: url(https://i.ibb.co/2qdPv4k/inv-staff-draenei-a-03.jpg);
+  }
+  &-scepter::before {
+    content: url(https://wiki.guildwars2.com/images/6/6c/Crude_Scepter.png);
+  }
+  &-shield::before {
+    content: url(https://wiki.guildwars2.com/images/c/cf/Shield.png);
+  }
+  &-shield-exotique::before {
+    content: url(https://wiki.guildwars2.com/images/f/f2/Grimward.png);
+  }
+  &-mechanical_weapon::before {
+    content: url(https://2img.net/image.noelshack.com/fichiers/2019/30/6/1564243318-technophile-gadget.png);
+  }
+  &-rifle::before {
+    content: url(https://wiki.guildwars2.com/images/d/d9/Mystic_Rifle.png);
+  }
+  &-turret::before {
+    content: url(https://i.ibb.co/RYtpYzk/technophile-turret.png);
+  }
+  &-deck::before {
+    content: url(https://wiki.guildwars2.com/images/a/a4/Sandstorm_Trump_Hand.png);
+  }
+  &-deck-exotique::before {
+    content: url(https://wiki.guildwars2.com/images/a/a9/Sandstorm_Meld_Hand.png);
+  }
+  &-ring::before {
+    content: url(https://wiki.guildwars2.com/images/4/4e/Druid%27s_Circle.png);
+  }
+  &-gauntlet::before {
+    content: url(https://wiki.guildwars2.com/images/b/b8/Mistward_Warfists.png);
+  }
+  &-instrument::before {
+    content: url(https://wiki.guildwars2.com/images/f/f6/Gift_of_The_Minstrel.png);
+  }
+  &-music_sheet::before {
+    content: url(https://wiki.guildwars2.com/images/b/b1/Burrisson%27s_Ditty.png);
+  }
+  &-music_sheet-exotique::before {
+    content: url(https://wiki.guildwars2.com/images/e/ea/Covington%27s_Sea_Song.png);
+  }
+
+  &-50px {
+    &-instrument-exotique::before {
+      content: url(https://i.ibb.co/V2qD5Tn/50px-instrument-exotique.png);
+    }
+    &-music_sheet-exotique::before {
+      content: url(https://i.ibb.co/v4pq2RG/50px-music-sheet-exotique.png);
+    }
+  }
+  //endregion -- Armes
+
+  //region    -- Armures
+  &-armor-light::before {
+    content: url(https://2img.net/h/media.blizzard.com/wow/icons/56/inv_shirt_01.jpg);
+  }
+  &-armor-intermediary::before {
+    content: url(https://2img.net/h/media.blizzard.com/wow/icons/56/inv_chest_leather_10.jpg);
+  }
+  &-armor-heavy::before {
+    content: url(https://2img.net/h/media.blizzard.com/wow/icons/56/inv_chest_plate16.jpg);
+  }
+  &-boots::before {
+    content: url(https://wiki.guildwars2.com/images/9/90/Leather_Shoes.png);
+  }
+  &-horseshoe::before {
+    content: url(https://wow.zamimg.com/images/wow/icons/large/inv_blacksmith_leystonehoofplates_red.jpg);
+  }
+  &-helm::before,
+  &-helmet::before {
+    content: url(https://wiki.guildwars2.com/images/9/93/Militia_Helm.png);
+  }
+  &-aquabreather::before {
+    content: url(https://wiki.guildwars2.com/images/4/4c/Aqua_Breather.png);
+  }
+  &-aquabreather-quality::before {
+    content: url(https://wiki.guildwars2.com/images/e/ee/Benthic_Breather.png);
+  }
+  &-aquabreather-exotique::before {
+    content: url(https://wiki.guildwars2.com/images/3/31/Rime-Rimmed_Mariner%27s_Rebreather.png);
+  }
+  //endregion -- Armures
+
+  //region    -- Artéfact & Porte-bonheur
+  &-pendant::before {
+    content: url(https://wiki.guildwars2.com/images/8/8f/Amulet.png);
+  }
+  &-pendant-exotique::before {
+    content: url(https://wiki.guildwars2.com/images/9/9c/Mark_of_the_Tethyos_Houses.png);
+  }
+  &-trinket::before {
+    content: url(https://wiki.guildwars2.com/images/9/94/Sam.png);
+  }
+  &-trinket-exotique::before {
+    content: url(https://wiki.guildwars2.com/images/c/c1/Feather_of_the_Owl.png);
+  }
+
+  &-50px {
+    &-pendant-exotique::before {
+      content: url(https://i.servimg.com/u/f13/11/12/92/75/c_user17.png);
+    }
+    &-trinket-exotique::before {
+      content: url(https://i.servimg.com/u/f13/11/12/92/75/c_user14.png);
+    }
+  }
+  //endregion -- Artéfact & Porte-bonheur
+
+  //region    -- Sceau
+  &-seal {
+    &-exotique::before {
+      content: url(https://wiki.guildwars2.com/images/7/71/Seal_of_the_Shaman.png);
+    }
+
+    &-oasis::before {
+      content: url(https://i.ibb.co/VNmZqX5/seal-oasis.png);
+    }
+  }
+  &-50px-seal {
+    &-exotique::before {
+      content: url(https://i.servimg.com/u/f13/11/12/92/75/50px_s10.png);
+    }
+  }
+  //endregion -- Sceau
+
+  //region    -- Monture & Familier
+  &-mount::before {
+    content: url(https://wiki.guildwars2.com/images/4/44/Mini_Lunar_%22Horse%22.png);
+  }
+  &-mount-exotique::before {
+    content: url(https://wiki.guildwars2.com/images/9/96/Pyroclast.png);
+  }
+
+  &-minion::before {
+    content: url(https://wiki.guildwars2.com/images/7/75/Mini_Orange_Tabby_Cat.png);
+  }
+
+  &-50px {
+    &-mount-exotique::before {
+      content: url(https://i.servimg.com/u/f13/11/12/92/75/50px_m11.png);
+    }
+  }
+  //endregion -- Monture & Familier
+
+  //region    -- Nourriture
+  &-candy::before {
+    content: url(https://wiki.guildwars2.com/images/7/72/Blackberry_Cookie.png);
+  }
+  &-candy-exotique::before {
+    content: url(https://wiki.guildwars2.com/images/c/cd/Cinnamon_Pinwheel.png);
+  }
+
+  &-50px {
+    &-candy-exotique::before {
+      content: url(https://i.servimg.com/u/f13/11/12/92/75/c_user13.png);
+    }
+  }
+  //endregion -- Nourriture
+}

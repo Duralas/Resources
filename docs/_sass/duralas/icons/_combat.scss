@@ -1,0 +1,47 @@
+.icon {
+  //region    -- Type d'adversaire
+  &.commandant::before {
+    content: url(https://2img.net/image.noelshack.com/fichiers/2018/48/4/1543454537-commandant.png);
+  }
+
+  &.archi-boss::before {
+    content: url(https://i.servimg.com/u/f36/15/33/58/83/sans_t37.png);
+  }
+  &.boss::before {
+    content: url(https://i.servimg.com/u/f36/15/33/58/83/sans_t36.png);
+  }
+  &.boss-legendaire::before {
+    content: url(https://i.servimg.com/u/f36/15/33/58/83/sans_t38.png);
+  }
+  //endregion -- Type d'adversaire
+
+  //region    -- Blessure
+  &.blessure::before,
+  &.wound::before {
+    content: url(https://i.servimg.com/u/f36/18/25/55/28/patte_10.png);
+  }
+
+  &.limite {
+    &10::before {
+      content: url(https://i.servimg.com/u/f36/18/25/55/28/sans_t13.png);
+    }
+    &15::before {
+      content: url(https://i.servimg.com/u/f36/15/33/58/83/1510.png);
+    }
+    &20::before {
+      content: url(https://i.servimg.com/u/f36/15/33/58/83/2010.png);
+    }
+    &30::before {
+      content: url(https://i.servimg.com/u/f36/15/33/58/83/3010.png);
+    }
+  }
+  //endregion -- Blessure
+
+  //region    -- État
+  &.alt {
+    &-sprst::before {
+      content: url(https://2img.net/image.noelshack.com/fichiers/2019/04/7/1548625398-alt-sprst.png);
+    }
+  }
+  //endregion -- État
+}

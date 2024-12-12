@@ -1,0 +1,174 @@
+.icon {
+  //region    -- Pièces d'or
+  &-gold {
+    &-sm::before {
+      content: url(https://i.servimg.com/u/f11/19/50/65/15/gold-s10.png);
+    }
+    &-md::before {
+      content: url(https://wiki.guildwars2.com/images/0/02/Bag_of_Coins.png);
+    }
+    &-lg::before {
+      content: url(https://wiki.guildwars2.com/images/b/b6/Heavy_Bag_of_Coins.png);
+    }
+  }
+  &-50px-gold {
+    &-md::before {
+      content: url(https://i.ibb.co/F67fnqq/gold-50px-md.png);
+    }
+    &-lg::before {
+      content: url(https://i.servimg.com/u/f13/11/12/92/75/gold-510.png);
+    }
+  }
+  //endregion -- Pièces d'or
+
+  //region    -- XP
+  &-xp {
+    &-sm::before {
+      content: url(https://i.servimg.com/u/f11/19/50/65/15/xp-sm10.jpg);
+    }
+    &-md::before {
+      content: url(https://wiki.guildwars2.com/images/9/93/Celestial_Infusion_%28Blue%29.png);
+    }
+    &-lg::before {
+      content: url(https://wiki.guildwars2.com/images/0/04/Celestial_Infusion_%28Red%29.png);
+    }
+    &-xtr::before {
+      content: url(https://wiki.guildwars2.com/images/5/53/Experienced_Infusion.png);
+    }
+  }
+  &-50px-xp {
+    &-sm::before {
+      content: url(https://i.servimg.com/u/f13/11/12/92/75/50px_x12.png);
+    }
+    &-md::before {
+      content: url(https://i.servimg.com/u/f13/11/12/92/75/50px_x11.png);
+    }
+    &-lg::before {
+      content: url(https://i.servimg.com/u/f13/11/12/92/75/c_user16.png);
+    }
+  }
+  //endregion -- XP
+
+  //region    -- Butin
+  &-book::before {
+    content : url(https://wiki.guildwars2.com/images/4/4c/Tome_of_Knowledge.png);
+  }
+  &-blueprint::before {
+    content : url(https://wiki.guildwars2.com/images/a/ab/Recipe_sheet_basic_consumable_1.png);
+  }
+  &-blueprint-exotique::before {
+    content : url(https://wiki.guildwars2.com/images/b/bb/Recipe_sheet_fine_sword.png);
+  }
+  &-cloth::before {
+    content: url(https://wiki.guildwars2.com/images/b/bc/Silk_Scrap.png);
+  }
+  &-clue::before {
+    content: url(https://wiki.guildwars2.com/images/3/30/Crumpled_Pages.png);
+  }
+  &-dart::before {
+    content: url(https://wiki.guildwars2.com/images/c/c3/Needle.png);
+  }
+  &-fin::before {
+    content: url(https://wiki.guildwars2.com/images/8/82/Fin.png);
+  }
+  &-flask::before {
+    content: url(https://render-eu.worldofwarcraft.com/icons/56/inv_alchemy_crystalvial.jpg);
+  }
+  &-flask-fire::before {
+    content: url(https://wiki.guildwars2.com/images/7/7c/Ever-Burning_Fuel.png);
+  }
+  &-flask-sand::before {
+    content: url(https://wiki.guildwars2.com/images/1/1b/Destroyer_Jar.png);
+  }
+  &-flask-water::before {
+    content: url(https://wiki.guildwars2.com/images/8/8c/Ancient_Spring_Water_Sample.png);
+  }
+  &-gemstone::before {
+    content: url(https://wiki.guildwars2.com/images/b/b5/Chrysocola_Orb.png);
+  }
+  &-jaw::before {
+    content: url(https://i.servimg.com/u/f11/11/12/92/75/jaw10.png);
+  }
+  &-loot::before {
+    content: url(https://wiki.guildwars2.com/images/8/84/Ettin_Refuse.png);
+  }
+  &-pearl::before {
+    content: url(https://wiki.guildwars2.com/images/9/9c/Orrian_Pearl.png);
+  }
+  &-sand::before {
+    content: url(https://wiki.guildwars2.com/images/c/c5/Burning_Ember.png);
+  }
+  &-thorn::before {
+    content: url(https://wiki.guildwars2.com/images/3/3f/Barbed_Thorn.png);
+  }
+
+  &-50px {
+    &-blueprint-exotique::before {
+      content : url(https://i.servimg.com/u/f56/20/12/86/42/50px_b10.png);
+    }
+    &-cloth::before {
+      content: url(https://i.servimg.com/u/f13/11/12/92/75/50px_c10.png);
+    }
+    &-clue::before {
+      content: url(https://i.ibb.co/9Z2t6Zr/50px-clue.png);
+    }
+    &-gemstone::before {
+      content: url(https://i.servimg.com/u/f13/11/12/92/75/50px_g10.png);
+    }
+    &-loot::before {
+      content: url(https://i.ibb.co/5W8DTzM/50px-loot.png);
+    }
+    &-loot-ice_rock::before {
+      content: url(https://i.ibb.co/MP8qqrN/50px-loot-ice-rock.png);
+    }
+    &-loot-rock_crystal::before {
+      content: url(https://i.ibb.co/Jry2Cj1/50px-loot-rock-crystal.png);
+    }
+  }
+  //endregion -- Butin
+
+  //region    -- Statistiques
+  &-power::before {
+    content: url(https://wiki.guildwars2.com/images/e/e2/Bloodstone_Empowerment.png);
+  }
+
+  &-50px {
+    &-attributes::before {
+      content: url(https://i.ibb.co/5R2Y17t/50px-attributes.png);
+    }
+  }
+  //endregion -- Statistiques
+
+  //region    -- Déblocage
+  &-access::before {
+    content: url(https://wiki.guildwars2.com/images/a/a3/Current_Events.png);
+  }
+  &-achievement::before {
+    content: url(https://wiki.guildwars2.com/images/8/8f/Koda%27s_Warmth_Enrichment.png);
+  }
+  &-achievement-exotique::before {
+    content: url(https://wiki.guildwars2.com/images/f/f0/Karmic_Infusion.png);
+  }
+  &-politique::before {
+    content: url(http://pile.randimg.net/2/26/131614/emblems.png);
+  }
+  &-reput::before {
+    content: url(https://wiki.guildwars2.com/images/7/77/Daybreak.png);
+  }
+  &-unlock::before {
+    content: url(https://wiki.guildwars2.com/images/b/b3/Living_Story.png);
+  }
+
+  &-50px {
+    &-achievement::before {
+      content: url(https://i.servimg.com/u/f13/11/12/92/75/achiev10.png);
+    }
+    &-achievement-exotique::before {
+      content: url(https://i.servimg.com/u/f13/11/12/92/75/achiev11.png);
+    }
+    &-politique::before {
+      content: url(http://pile.randimg.net/2/31/132790/emblems_50px.png);
+    }
+  }
+  //endregion -- Déblocage
+}

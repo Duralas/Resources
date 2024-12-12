@@ -1,0 +1,12 @@
+.icon {
+  &-faction {
+    //region    -- Coffre-fort
+    &-siege_weapon::before {
+      content: url(https://wiki.guildwars2.com/images/a/a6/Decoration-_Catapult.png);
+    }
+    &-supply::before {
+      content: url(https://wiki.guildwars2.com/images/d/d7/Basic_Crate.png);
+    }
+    //endregion -- Coffre-fort
+  }
+}

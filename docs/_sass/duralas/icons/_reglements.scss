@@ -1,0 +1,65 @@
+.icon {
+  //region    -- Présentation de règles
+  &-craft::before {
+    content: url(https://2img.net/image.noelshack.com/fichiers/2019/38/3/1568809824-20px-crafting-icon2.png);
+  }
+  &-tung::before {
+    content: url(https://i.servimg.com/u/f19/18/61/88/98/iczne_10.png);
+  }
+  &-todo::before {
+    content: url(https://i.servimg.com/u/f13/11/12/92/75/c_user12.png);
+  }
+  //endregion -- Présentation de règles
+
+  //region    -- Interface
+  &-goto::before {
+    content: url(https://wiki.guildwars2.com/images/f/fe/Scout_%28map_icon%29.png);
+  }
+  //endregion -- Interface
+
+  //region    -- Événements
+  &-event {
+    &-birthday::before {
+      content: url(https://i.servimg.com/u/f56/20/12/86/42/event-14.png);
+    }
+    &-boss::before {
+      content: url(https://i.servimg.com/u/f56/20/12/86/42/event-21.png);
+    }
+    &-current::before {
+      content: url(https://i.servimg.com/u/f56/20/12/86/42/event-16.png);
+    }
+    &-community::before {
+      content: url(https://i.servimg.com/u/f56/20/12/86/42/event-15.png);
+    }
+    &-fest::before {
+      content: url(https://i.servimg.com/u/f56/20/12/86/42/event-17.png);
+    }
+    &-festival::before {
+      content: url(https://i.servimg.com/u/f56/20/12/86/42/event-22.png);
+    }
+    &-magistral::before {
+      content: url(https://i.servimg.com/u/f56/20/12/86/42/event-18.png);
+    }
+    &-phénix::before {
+      content: url(https://i.servimg.com/u/f56/20/12/86/42/event-19.png);
+    }
+    &-rotate::before {
+      content: url(https://i.servimg.com/u/f56/20/12/86/42/event-23.png);
+    }
+    &-war::before {
+      content: url(https://i.servimg.com/u/f56/20/12/86/42/event-20.png);
+    }
+  }
+  //endregion -- Événements
+
+  //region    -- Actions
+  &-action {
+    &-aqueous::before {
+      content: url(https://2img.net/image.noelshack.com/fichiers/2019/33/7/1566126650-action-aqueous.png);
+    }
+    &-sprint::before {
+      content: url(https://2img.net/image.noelshack.com/fichiers/2019/33/7/1566126650-action-sprint.png);
+    }
+  }
+  //endregion -- Actions
+}

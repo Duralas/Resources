@@ -1,0 +1,21 @@
+.icon {
+  //region    -- Nordiques
+  &-weapon-nord-exotique::before {
+    content: url(https://wiki.guildwars2.com/images/c/cd/Corrupted_Spear.png);
+  }
+
+  &-50px-weapon-nord-exotique::before {
+    content: url(https://i.servimg.com/u/f13/11/12/92/75/c_user15.png);
+  }
+  //endregion -- Nordiques
+
+  //region    -- Djöllfulins
+  &-weapon-djöl-exotique::before {
+    content: url(https://wiki.guildwars2.com/images/8/80/Marjory%27s_Everliving_Blade.png);
+  }
+
+  &-50px-weapon-djöl-exotique::before {
+    content: url(https://i.servimg.com/u/f13/11/12/92/75/50px_w11.png);
+  }
+  //endregion -- Djöllfulins
+}

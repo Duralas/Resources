@@ -1,0 +1,23 @@
+.icon {
+  //region    -- Perle oasienne
+  &-perle_oasienne {
+    &-boat::before {
+      content: url(https://wiki.guildwars2.com/images/5/50/Zephyr_Sailboat.png);
+    }
+    &-offering::before {
+      content: url(https://wiki.guildwars2.com/images/0/0b/Zephyr_Koi_Lantern.png);
+    }
+  }
+  //endregion -- Perle oasienne
+
+  //region    -- Ynatlatt
+    &-ynatlatt {
+      &-plant-faction::before {
+        content: url(https://wiki.guildwars2.com/images/2/27/Potted_Blue_Moa_Fern.png);
+      }
+      &-trophy-faction::before {
+        content: url(https://wiki.guildwars2.com/images/6/6a/Cowrie_League_Caravan%27s_Scales.png);
+      }
+    }
+  //endregion -- Ynatlatt
+}
