@@ -1,0 +1,63 @@
+//region    -- Base
+$color-quetes-underline: $color;
+
+$color-quetes-frame: $color;
+$color-quetes-frame-bd: #555C5F;
+$color-quetes-frame-bg: #1919198c;
+
+$color-quetes-title-bd: $color;
+
+$color-quetes-field: #FFF;
+
+$color-quetes-link: #FFF;
+$color-quetes-link-hover: #FFF;
+//endregion -- Base
+
+// --------------------------------------------------
+
+//region    -- Djöllfulins
+$color-quetes-djöllfulins-underline: #b73200d9;
+
+$color-quetes-djöllfulins-frame: $color-quetes-frame;
+$color-quetes-djöllfulins-frame-bd: $color-quetes-frame-bd;
+$color-quetes-djöllfulins-frame-bg: $color-quetes-frame-bg;
+
+$color-quetes-djöllfulins-title-bd: #6100008c;
+
+$color-quetes-djöllfulins-field: #e83700d1;
+
+$color-quetes-djöllfulins-link: #ff7800;
+$color-quetes-djöllfulins-link-hover: $color-quetes-link-hover;
+//endregion -- Djöllfulins
+
+//region    -- Nordiens
+$color-quetes-nordiens-underline: #0DF;
+
+$color-quetes-nordiens-frame: $color-quetes-frame;
+$color-quetes-nordiens-frame-bd: $color-quetes-frame-bd;
+$color-quetes-nordiens-frame-bg: #1B2C32;
+
+$color-quetes-nordiens-title-bd: #00CBD417;
+
+$color-quetes-nordiens-field: $color-quetes-field;
+
+$color-quetes-nordiens-link: #00A7C3;
+$color-quetes-nordiens-link-hover: $color-quetes-link-hover;
+//endregion -- Nordiens
+
+// --------------------------------------------------
+
+//region    -- Gardiens
+$color-quetes-gardiens-underline: $color-gardiens;
+
+$color-quetes-gardiens-frame: #1919198c;
+$color-quetes-gardiens-frame-bd: $color-gardiens;
+$color-quetes-gardiens-frame-bg: #BCC4C7;
+
+$color-quetes-gardiens-title-bd: $color-gardiens;
+
+$color-quetes-gardiens-field: $color-gardiens;
+
+$color-quetes-gardiens-link: $color-gardiens;
+$color-quetes-gardiens-link-hover: $color-quetes-link-hover;
+//endregion -- Gardiens

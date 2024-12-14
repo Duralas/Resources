@@ -1,0 +1,54 @@
+//region    -- Variables
+.quests-gardiens,
+.quests-garde,
+.rules-gardiens,
+.rules-garde {
+  --quetes-underline: #{$color-quetes-gardiens-underline};
+
+  --quetes-frame: #{$color-quetes-gardiens-frame};
+  --quetes-frame-bd: #{$color-quetes-gardiens-frame-bd};
+  --quetes-frame-bg: #{$color-quetes-gardiens-frame-bg};
+
+  --quetes-title-bd: #{$color-quetes-gardiens-title-bd};
+
+  --quetes-field: #{$color-quetes-gardiens-field};
+
+  --quetes-link: #{$color-quetes-gardiens-link};
+  --quetes-link-hover: #{$color-quetes-gardiens-link-hover};
+}
+//endregion -- Variables
+
+// --------------------------------------------------
+
+//region    -- Content
+
+//region    ----- Container unitaire
+.quests-gardiens,
+.quests-garde {
+  .quest {
+    &-frame {
+      width: 650px;
+    }
+  }
+}
+//endregion ----- Container unitaire
+
+//region    ----- Listing des notes
+.quests-gardiens,
+.quests-garde {
+  .quest {
+    &-nota {
+      width: 90%;
+    }
+
+    &-notum {
+      &-i {
+        color: $color-gardiens;
+        text-align: center;
+      }
+    }
+  }
+}
+//endregion ----- Listing des notes
+
+//endregion -- Content

@@ -1,6 +1,9 @@
 ---
 ---
 
+@import
+  "duralas/colors";
+
 //region    -- Icônes
 @import
   "duralas/icons/combat",
@@ -12,3 +15,12 @@
   "duralas/icons/reglements";
 //endregion -- Icônes
 
+//region    -- Quêtes
+@import
+  "duralas/quetes/colors",
+  "duralas/quetes/template",
+  "duralas/quetes/groupes/djollfulins",
+  "duralas/quetes/groupes/nordiens",
+  "duralas/quetes/factions/congregation_ombre",
+  "duralas/quetes/factions/gardiens";
+//endregion -- Quêtes

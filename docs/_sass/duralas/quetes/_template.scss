@@ -1,0 +1,303 @@
+//region    -- Transverse
+.indice:hover {
+  text-shadow: 1px 1px 3px #4472C4;
+}
+//endregion -- Transverse
+
+//region    -- [Commun] Quêtes + Règlements
+
+//region    ----- Variables
+.quests,
+.rules {
+  --quetes-underline: #{$color-quetes-underline};
+
+  --quetes-frame: #{$color-quetes-frame};
+  --quetes-frame-bd: #{$color-quetes-frame-bd};
+  --quetes-frame-bg: #{$color-quetes-frame-bg};
+
+  --quetes-title-bd: #{$color-quetes-title-bd};
+
+  --quetes-field: #{$color-quetes-field};
+
+  --quetes-link: #{$color-quetes-link};
+  --quetes-link-hover: #{$color-quetes-link-hover};
+}
+//endregion ----- Variables
+
+//region    ----- Container global
+.quests,
+.rules {
+  &-categ {
+    color: #F2F2F2;
+    font-family: Italianno;
+    font-size: 60px;
+    height: 200px;
+    overflow: auto;
+    padding-left: 20px;
+    text-shadow: 1px 1px 0 #000;
+    width: 100%;
+
+    &-underline {
+      display: block;
+      border-bottom: 1px solid var(--quetes-underline);
+      margin-top: 3px;
+      width: 100%;
+    }
+  }
+
+  &-banner {
+    text-align: center;
+  }
+
+  &-intro {
+    color: #BCC4C7;
+    font-size: 12px;
+    font-style: italic;
+    margin: 0 40px 5px;
+    text-align: center;
+  }
+}
+//endregion ----- Container global
+
+//region    ----- Container unitaire
+.quest,
+.rule {
+  &:hover {
+    .quest-title,
+    .rule-title {
+      color: #FFF;
+      letter-spacing: 0;
+      text-shadow: 1px 1px 10px #FFF;
+      transition: 1s;
+    }
+  }
+
+  &-frame {
+    padding: 20px;
+    border: 2px solid var(--quetes-frame-bd);
+    margin: auto;
+    background-color: var(--quetes-frame-bg);
+    color: var(--quetes-frame);
+    font-size: 13px;
+    line-height: 18px;
+    width: 600px;
+  }
+
+  &-title {
+    border-bottom: 1px solid var(--quetes-title-bd);
+    color: #F2F2F2;
+    font-family: Cinzel Decorative;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0 auto 7px;
+    text-align: center;
+    transition: 1s;
+    width: 75%
+  }
+
+  &-field {
+    color: var(--quetes-field);
+    font-family: Cinzel Decorative;
+  }
+}
+//endregion ----- Container unitaire
+
+//region    ----- Listing des notes
+.quest,
+.rule {
+  &-nota {
+    padding: 0 10px;
+    border-color: #ffffff0d;
+    border-style: solid;
+    border-width: 0 1px;
+    margin: 5px auto 10px;
+    display: table;
+    width: 80%;
+  }
+
+  &-notum {
+    display: table-row;
+
+    &-i {
+      color: #DCDCDC;
+      padding: 3px;
+      display: table-cell;
+    }
+
+    &-item {
+      display: table-cell;
+      vertical-align: top;
+    }
+  }
+}
+//endregion ----- Listing des notes
+
+//endregion -- [Commun] Quêtes + Règlements
+
+//--------------------------------------------------
+
+//region    -- %Placeholders pour [Spécifique]
+%__quetes_template_listing-container {
+  display: table;
+  margin: auto;
+  width: 80%;
+}
+%__quetes_template_listing-item {
+  display: table-row;
+}
+%__quetes_template_listing-item-content {
+  padding: 0 15px;
+  display: table-cell;
+  vertical-align: top;
+}
+%__quetes_template_listing-item-scope {
+  padding: 5px 10px;
+  border: 1px solid;
+  margin: 10px 5px 5px;
+  background-color: #A8ECFF61;
+  box-shadow: -2px 3px 4px #000;
+}
+//endregion -- %Placeholders pour [Spécifique]
+
+//region    -- [Spécifique] Quête
+// TODO: TMP Tant que le css du forum a la priorité (.postbody a)
+.postbody {
+  .quest {
+    a {
+      color: var(--quetes-link);
+      text-shadow: none;
+
+      &:hover {
+        color: var(--quetes-link-hover);
+      }
+    }
+  }
+}
+
+.quest {
+  /* TODO: TMP Tant que le css du forum a la priorité (.postbody a)
+  a {
+    color: var(--quetes-link);
+    text-shadow: none;
+
+    &:hover {
+      color: var(--quetes-link-hover);
+    }
+  }
+  */
+
+  &-enigma {
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+//region    ----- Objectifs
+.quest {
+  &-objectus {
+    @extend %__quetes_template_listing-container;
+  }
+
+  &-objecta {
+    @extend %__quetes_template_listing-item;
+
+    &-content {
+      @extend %__quetes_template_listing-item-content;
+    }
+
+    &-scope {
+      @extend %__quetes_template_listing-item-scope;
+    }
+
+    &-icon {
+      display: table-cell;
+      width: 30px;
+    }
+
+    &-todo {
+      border: 1px solid #000;
+      margin: 0 auto;
+      background-color: #CDCDCD;
+      height: 20px;
+      width: 20px;
+      vertical-align: top;
+    }
+  }
+}
+//endregion ----- Objectifs
+
+//region    ----- Récompenses
+%__quetes_template_reward-inter-style {
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.quest {
+  &-rewards {
+    margin: 5px auto 10px;
+    display: table;
+    width: 80%;
+  }
+
+  &-reward {
+    display: table-row;
+
+    &-icon {
+      display: table-cell;
+      width: 50px;
+      height: 50px;
+      vertical-align: middle;
+    }
+
+    &-desc {
+      padding: 5px 15px;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    &-inter {
+      @extend %__quetes_template_reward-inter-style;
+
+      & > div {
+        display: table-cell;
+      }
+    }
+  }
+}
+
+.reward {
+  &-inter {
+    @extend %__quetes_template_reward-inter-style;
+  }
+}
+//endregion ----- Récompenses
+
+//endregion -- [Spécifique] Quête
+
+//region    -- [Spécifique] Règlement
+
+//region    ----- Notes
+.rule {
+  &-ena {
+    @extend %__quetes_template_listing-container;
+  }
+
+  &-enum {
+    @extend %__quetes_template_listing-item;
+
+    &-content {
+      @extend %__quetes_template_listing-item-content;
+    }
+
+    &-scope {
+      @extend %__quetes_template_listing-item-scope;
+    }
+  }
+}
+//endregion ----- Notes
+
+//endregion -- [Spécifique] Règlement

@@ -1,0 +1,30 @@
+//region    -- Variables
+.quests-djöllfulins {
+  --quetes-underline: #{$color-quetes-djöllfulins-underline};
+
+  --quetes-frame: #{$color-quetes-djöllfulins-frame};
+  --quetes-frame-bd: #{$color-quetes-djöllfulins-frame-bd};
+  --quetes-frame-bg: #{$color-quetes-djöllfulins-frame-bg};
+
+  --quetes-title-bd: #{$color-quetes-djöllfulins-title-bd};
+
+  --quetes-field: #{$color-quetes-djöllfulins-field};
+
+  --quetes-link: #{$color-quetes-djöllfulins-link};
+  --quetes-link-hover: #{$color-quetes-djöllfulins-link-hover};
+}
+//endregion -- Variables
+
+// --------------------------------------------------
+
+//region    -- Content
+.quests-djöllfulins {
+  .icon {
+    &-todo {
+      &::before {
+        content: url(https://i.servimg.com/u/f13/11/12/92/75/c_user18.png);
+      }
+    }
+  }
+}
+//endregion -- Content

@@ -1,0 +1,80 @@
+//region    -- Contrats
+.bounty {
+  &-banner {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-field {
+    color: #FFF;
+    font-weight: 700;
+
+    &::before {
+      content: "× "
+    }
+
+    &::after {
+      content: " : "
+    }
+  }
+
+  &-rank {
+    %__quetes_co-contrats_rank_before {
+      color: #800;
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+      font-size: 1.6em;
+    }
+
+    &-A {
+      &::before {
+        @extend %__quetes_co-contrats_rank_before;
+        content: "A"
+      }
+      &::after {
+        content: " (1-2 personnes)";
+      }
+    }
+
+    &-B {
+      &::before {
+        @extend %__quetes_co-contrats_rank_before;
+        content: "B"
+      }
+      &::after {
+        content: " (2-3 personnes)";
+      }
+    }
+
+    &-C {
+      &::before {
+        @extend %__quetes_co-contrats_rank_before;
+        content: "C"
+      }
+      &::after {
+        content: " (2-4 personnes)";
+      }
+    }
+
+    &-D {
+      &::before {
+        @extend %__quetes_co-contrats_rank_before;
+        content: "D"
+      }
+      &::after {
+        content: " (2-5 personnes)";
+      }
+    }
+
+    &-S {
+      &::before {
+        @extend %__quetes_co-contrats_rank_before;
+        content: "S"
+      }
+
+      &::after {
+        content: " (1-4 personnes)";
+      }
+    }
+  }
+}
+//endregion -- Contrats

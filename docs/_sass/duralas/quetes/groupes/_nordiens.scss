@@ -1,0 +1,30 @@
+//region    -- Variables
+.quests-nordiens {
+  --quetes-underline: #{$color-quetes-nordiens-underline};
+
+  --quetes-frame: #{$color-quetes-nordiens-frame};
+  --quetes-frame-bd: #{$color-quetes-nordiens-frame-bd};
+  --quetes-frame-bg: #{$color-quetes-nordiens-frame-bg};
+
+  --quetes-title-bd: #{$color-quetes-nordiens-title-bd};
+
+  --quetes-field: #{$color-quetes-nordiens-field};
+
+  --quetes-link: #{$color-quetes-nordiens-link};
+  --quetes-link-hover: #{$color-quetes-nordiens-link-hover};
+}
+//endregion -- Variables
+
+// --------------------------------------------------
+
+//region    -- Content
+.quests-nordiens {
+  .icon {
+    &-todo {
+      &::before {
+        content: url(https://i.servimg.com/u/f13/11/12/92/75/c_user12.png);
+      }
+    }
+  }
+}
+//endregion -- Content
