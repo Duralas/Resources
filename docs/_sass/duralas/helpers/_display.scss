@@ -1,0 +1,32 @@
+//region    -- Flex
+.flex {
+  display: flex;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+
+  &.flex-column {
+    align-items: center;
+  }
+}
+//endregion -- Flex
+
+//region    -- Table
+.table {
+  display: table;
+}
+.table-row {
+  display: table-row;
+}
+.table-cell {
+  display: table-cell;
+}
+//endregion -- Table
