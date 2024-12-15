@@ -22,6 +22,12 @@
   "duralas/presentation/voies";
 //endregion -- Présentation
 
+//region    -- Économie
+@import
+  "duralas/economie/shop",
+  "duralas/economie/boutique";
+//endregion -- Économie
+
 //region    -- Quêtes
 @import
   "duralas/quetes/colors",

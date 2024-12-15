@@ -1,0 +1,33 @@
+.shop {
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: collapse;
+
+  tr {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #202b02;
+
+    &.shop {
+      &_last {
+        border-bottom-style: dashed;
+        border-bottom-color: #fff;
+      }
+
+      &_total {
+        border-top-width: 0;
+
+        td {
+          padding: 15px;
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+      }
+    }
+
+    td {
+      padding: 10px;
+    }
+  }
+}

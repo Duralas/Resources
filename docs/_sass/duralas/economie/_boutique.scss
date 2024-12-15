@@ -1,0 +1,96 @@
+//region    -- [Général] Boutique
+%__economie_boutique-table {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.boutique {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+
+  &-règles {
+    margin: auto;
+    width: 400px;
+    font-size: 12px;
+  }
+
+  &-titre {
+    background-color: #0092FF;
+    text-align: center;
+
+    h1 {
+      padding: 2px 0;
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+
+  &-objet {
+    display: table-row;
+
+    &-nom {
+      color: #FFDDC4;
+
+      > strong {
+        display: block;
+      }
+    }
+
+    &-icon {
+      @extend %__economie_boutique-table;
+
+      border: 3px solid rgba(0, 145, 255, 0.33);
+      height: 70px;
+      width: 70px;
+
+      > .icon {
+        display: inline-block;
+      }
+    }
+
+    &-description {
+      @extend %__economie_boutique-table;
+
+      padding: 10px;
+      border-color: rgba(0, 145, 255, 0.33);
+      border-style: solid;
+      border-width: 0 0 3px 3px;
+      width: 500px;
+    }
+
+    &-void {
+      width: 20px;
+    }
+  }
+}
+
+p.boutique-description {
+  margin: 10px 20px;
+  font-family: roman;
+  font-size: 16px;
+}
+//endregion -- [Général] Boutique
+
+// --------------------------------------------------
+
+//region    -- [Spécifique]
+
+//region    ----- Grand Nord
+.boutique-nord {
+  .titre {
+    background-color: #1E779A;
+    color: #FFF;
+    font-family: Italianno;
+    font-size: 48px;
+  }
+
+  .titrerace {
+    background-color: #0a293cc7;
+    font-family: cinzel decorative;
+  }
+}
+//endregion ----- Grand Nord
+
+//endregion -- [Spécifique]
