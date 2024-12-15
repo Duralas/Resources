@@ -6,6 +6,12 @@
   "duralas/helpers/display"
 ;
 
+//region    -- Forum
+@import
+  "duralas/forum/components/forumactif",
+  "duralas/forum/mise_en_page/liens";
+//endregion -- Forum
+
 //region    -- Icônes
 @import
   "duralas/icons/combat",

@@ -161,7 +161,7 @@
 //endregion -- %Placeholders pour [Spécifique]
 
 //region    -- [Spécifique] Quête
-// TODO: TMP Tant que le css du forum a la priorité (.postbody a)
+// Pour surcharger le style de base de forumactif
 .postbody {
   .quest {
     a {
@@ -176,17 +176,6 @@
 }
 
 .quest {
-  /* TODO: TMP Tant que le css du forum a la priorité (.postbody a)
-  a {
-    color: var(--quetes-link);
-    text-shadow: none;
-
-    &:hover {
-      color: var(--quetes-link-hover);
-    }
-  }
-  */
-
   &-enigma {
     font-size: 12px;
     font-style: italic;

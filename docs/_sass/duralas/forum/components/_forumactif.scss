@@ -1,0 +1,73 @@
+//region    -- Chatbox
+#frame_chatbox {
+  font-family: 'Philosopher';
+}
+
+#chatbox {
+  word-wrap: break-word;
+
+  &_header {
+    .cattitle {
+      &:before {
+        content: "Bienvenue à la Taverne de Dùralas";
+        font-family: 'Philosopher';
+        font-size: 15px;
+      }
+
+      strong {
+        font-size: 0;
+      }
+    }
+  }
+}
+.chatbox {
+  overflow-y: unset !important;
+}
+
+.msg {
+  span[style*="green"] strong {
+    color: #77b300;
+    font-variant: small-caps;
+  }
+  span[style*="red"] strong {
+    color: #7d738c;
+    font-variant: small-caps;
+  }
+}
+//endregion -- Chatbox
+
+// --------------------------------------------------
+
+//region    -- Code
+.code {
+  padding: 15px;
+  border-radius: 0 20px 0 20px;
+  background: url('http://html-color.org/191D0F.jpg');
+  color: #B0C4DE;
+}
+.selectCode {
+  cursor: pointer;
+  margin-right: 25px;
+  float: right;
+  color: #B0C4DE;
+  font-size: 12px;
+}
+div.cont_code {
+  clear: right;
+}
+//endregion -- Code
+
+//region    -- Citation
+.quote{
+  padding: 15px;
+  border-radius: 0 20px 0 20px;
+  background: url('https://www.colorhexa.com/222816.png');
+  color: #B0C4DE;
+}
+//endregion -- Citation
+
+//region    -- Barre de séparation
+hr {
+  border: 1px solid #A4BC83;
+}
+//endregion -- Barre de séparation
