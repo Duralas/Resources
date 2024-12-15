@@ -1,0 +1,157 @@
+//region    -- Commun
+.récompenses-présentation {
+  border-collapse: collapse;
+}
+//endregion -- Commun
+
+//region    -- Voie standard
+.récompenses-présentation {
+  &.vstd {
+    margin: 0 auto;
+    width: 400px;
+
+    > tbody {
+      > tr {
+        &:last-child {
+          > td {
+            border-width: 0 0 2px;
+          }
+        }
+
+        > td {
+          border-style: solid;
+          border-width: 0 2px;
+        }
+      }
+    }
+
+    .récompense-accroche {
+      padding: 5px 0;
+      border-style: solid;
+      border-width: 2px;
+      text-align: center;
+      color: #FC0;
+      font-family: lucida calligraphy;
+    }
+
+    .récompense-description {
+      display: table;
+
+      .récompense-icon {
+        border-right-style: solid;
+        border-right-width: 2px;
+        display: table-cell;
+        vertical-align: middle;
+        width: 70px;
+        text-align: center;
+      }
+
+      .récompense {
+        padding: 3px 0;
+        border-style: solid;
+        border-width: 2px 2px 0 2px;
+        margin-top: 10px;
+        text-align: center;
+
+        &-contenu {
+          padding: 5px 10px 0;
+          display: table-cell;
+        }
+
+        &-texte {
+          color: #CDD4A1;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+//endregion -- Voie standard
+
+//region    -- Voie spécialisée
+.récompenses-présentation {
+  &.vspé {
+    margin: 0 auto;
+    width: 800px;
+
+    > tbody {
+      > tr {
+        > td {
+          padding: 0 0 15px;
+          border-color: $color-presentation;
+          border-style: solid;
+          border-width: 0 2px 2px;
+        }
+      }
+    }
+
+    .tour {
+      border-color: $color-presentation;
+      border-style: solid;
+      border-width: 0 2px;
+      background-color: $color-presentation;
+      text-align: center;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    .tiers {
+      &-titre {
+        padding-right: 15px;
+
+        &.tiers {
+          &-badge {
+            border-color: $color-presentation;
+            border-style: solid;
+            border-width: 1px 2px 2px 1px;
+            background-color: #FC0;
+            display: inline-block;
+            height: 22px;
+            width: 30px;
+            text-align: center;
+            color: #000;
+            font-size: 14px;
+            font-weight: 700;
+          }
+
+          &-accroche {
+            padding-left: 10px;
+            color: #FC0;
+            font-family: lucida calligraphy;
+          }
+        }
+      }
+
+      &-contenu {
+        margin: 5px 16px;
+        display: table;
+
+        .tiers {
+          &-cadre {
+            border-bottom: 2px solid $color-presentation;
+            border-left: 2px solid $color-presentation;
+            display: table-cell;
+            width: 25px;
+          }
+
+          &-texte {
+            padding: 0 5px 5px;
+            display: table-cell;
+            color: #CDD4A1;
+            font-style: italic;
+          }
+        }
+      }
+
+      &-récompense {
+        padding: 5px;
+        border: 1px solid #FFF;
+        margin: 10px 15px 0;
+        text-align: center;
+        color: #FFF;
+        font-weight: 700;
+      }
+    }
+  }
+}
+//endregion -- Voie spécialisée

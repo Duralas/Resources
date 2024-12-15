@@ -1,0 +1,79 @@
+//region    -- Modèle
+.fiche {
+  &-champ {
+    text-decoration: underline;
+  }
+
+  &-personnage {
+    margin: auto;
+    background-color: #FFF3E0;
+    box-shadow: 0 0 5px #FFE4C4;
+    width: 600px;
+    color: #261A0D;
+    font-size: 13px;
+
+    &-contenu {
+      padding: 0 20px 30px;
+
+      a {
+        color: #4D2E00;
+
+        &:link:active,
+        &:link:focus,
+        &:link:hover {
+          color: #B35900;
+        }
+      }
+
+      img.fiche-personnage-light {
+        opacity: 0.7;
+      }
+
+      .fiche-personnage-partie {
+        &:hover {
+          img.fiche-personnage-light {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &-img-border {
+      border-bottom: 1px solid #8f7d00;
+      margin: auto;
+      width: 80%;
+    }
+  }
+
+  &-joueur {
+    padding: 20px;
+    border : 2px solid #331A00;
+    margin: auto;
+    background-color: #1A0D00;
+    width: 560px;
+    font-size: 13px;
+
+    &-titre {
+      color: #B35900;
+      font-family: Tangerine;
+      font-size: 38px;
+      letter-spacing: 2px;
+      line-height: 18px;
+      text-align: center;
+      text-shadow: 2px 0 2px;
+    }
+  }
+}
+//endregion -- Modèle
+
+//region    -- Couleurs
+.bg-vert_présentation {
+  background-color: $color-presentation;
+}
+.bdc-vert_présentation {
+  border-color: $color-presentation;
+}
+.color-vert_présentation {
+  color: $color-presentation;
+}
+//endregion -- Couleurs
