@@ -1,0 +1,1186 @@
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
+
+
+/********************* Correction page d'inscription *********************/
+#password_reg {
+    float: none;
+}
+#cont_pwd {
+    display: inline-block;
+    float: none;
+}
+
+/***************************************** DESIGN DU FOND *****************************************/
+html {
+    background-color: #000;
+}
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y:scroll !important;
+
+    /* Variables */
+    --color-congrégation_ombre: #6329BC;
+    --color-garde_zéphyr: #25AB37;
+    --color-gardiens: #E0CDA9;
+    --color-khazariens: #5555CD;
+    --color-milice: #2971BC;
+    --color-pirates: #52C9CB;
+    --color-dragonniers: #535790;
+
+    --color-convergence: #ec6c2f;
+    --color-convergence-dark: #A85;
+}
+
+.site_description{
+    padding-top:50px;
+}
+
+/*header*/
+#i_bg {
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+}
+
+/*logo*/
+#i_logo {
+    z-index: 900;
+    position:relative;
+}
+
+
+/*corps central*/
+.bodylinewidth{
+    box-shadow: 0 0 20px #000;
+    padding-bottom:0;
+    margin-top:-750px;
+}
+
+.bodyline {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Liste des actions (notamment icones) */
+.top_action_list {
+    margin: 15px 0 5px;
+}
+
+/*categories*/
+.forumline{
+    background-image: url("https://i.ibb.co/qDNZz1z/forumline-texture.jpg");
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px black;
+    border:3px solid #000;
+}
+.forumline td.catLeft {
+    background-color: unset;
+}
+td.catTop,
+td.catRight,
+td.catBottom,
+td.catLeft {
+    border-width: 0 0 0 0;
+}
+.catBottom {
+    background-color: transparent !important;
+}
+.secondarytitle,
+.catHead,
+.forumline th {
+    background-color: unset !important;
+    border: 0 !important;
+}
+
+/* Catégories / Forums */
+.drls_categ {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25em 1em 0 0;
+}
+
+.drls_categ_panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 700px;
+}
+.drls_categ_panel_header {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.25em;
+}
+.drls_categ_panel_header_stats {
+    font-size: 0.6em;
+}
+.drls_categ_panel_content {
+    display: flex;
+    flex-direction: column;
+    font-size: smaller;
+    height: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+.drls_categ_panel_content_sublinks {
+    background-image: url("https://i.ibb.co/qDNZz1z/forumline-texture.jpg");
+    border-top-right-radius: 5px;
+    margin-top: auto;
+    max-width: 684px;
+    opacity: 0.8;
+    padding: 0.25em 8px;
+    width: max-content;
+}
+.drls_categ_panel_content_sublinks:empty {
+    padding: unset;
+}
+.zone-banner + .drls_categ_panel_content_sublinks {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.drls_categ_last_activity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 0.5em;
+    text-align: center;
+    width: 15%;
+}
+.drls_categ_last_activity_desc {
+    font-size: 0.6em;
+}
+.drls_categ_last_activity_image img {
+    border-radius: 5px;
+    height: 72px;
+    width: 45px;
+}
+/* ----- Titre du RP du dernier post ----- */
+.drls_categ_last_activity_desc > span > a:first-of-type {
+    font-size: 1.25em;
+}
+
+/* ----- Zones : bannière et description ----- */
+.zone-desc {
+    font-size: 0.85em;
+    height: calc(100% - 3.5em);
+    opacity: 0;
+    overflow-y: auto;
+    position: absolute;
+    text-align: justify;
+    top: 1.5em;
+    width: 100%;
+}
+.zone-desc p {
+    margin: 0.5em 0.5em 0;
+    padding: 0 12.5%;
+}
+.zone-desc > p:first-of-type {
+    margin-top: 0.75em;
+}
+.zone-desc > p:last-of-type {
+    margin-bottom: 0.75em;
+}
+.zone-banner.has_desc:hover .zone-desc {
+    opacity: 1;
+    z-index: 1;
+}
+.zone-banner.has_desc:hover img {
+    opacity: 0.20;
+}
+.zone-banner.has_desc .zone-desc,
+.zone-banner.has_desc:hover .zone-desc,
+.zone-banner.has_desc img,
+.zone-banner.has_desc:hover img {
+    transition: 1.5s;
+}
+
+
+.forumline a.forumlink {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* Subrillance lors du survol */
+.forumline tr:hover a.forumlink {
+    color: #FFF;
+    letter-spacing: 0;
+    text-shadow: 1px 1px 10px #FFF;
+}
+
+
+/*barre de navigation*/
+.navig {
+    background-image: url("https://i.ibb.co/Rp7B0Xy/navbar-texture.jpg");
+    box-shadow: inset 0 -4px 5px -4px #422a12;
+    font-family: 'IM Fell English SC', serif;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 10px 0 6px 0;
+    opacity: 0.95;
+}
+
+.navbar_expanding {
+    display: table;
+}
+.navbar_container_block {
+    display: table-cell;
+}
+.navbar_container_block + .navbar_container_block {
+    padding-left: 25px;
+}
+.navbar_block {
+    display: table;
+}
+.mainmenu {
+    cursor: pointer;
+    display: table-row;
+}
+.submenu {
+    background-color: #1A1209;
+    bottom: unset;
+    display: none;
+    left: unset;
+    padding: 5px 10px;
+    position: fixed;
+    right: unset;
+    text-align: center;
+    top: unset;
+}
+
+.mainmenu-link,
+.mainmenu-item {
+    color: #f7e9c9;
+    font-size: 20px;
+    text-shadow :0 0 3px #000;
+}
+.mainmenu-link:focus,
+.mainmenu-link:hover,
+.notification.unread {
+    color: #FFF;
+    text-shadow: 0 0 3px #FFF;
+}
+.notification.unread:focus,
+.notification.unread:hover {
+    color: inherit;
+    text-shadow: none;
+}
+#notification_list .content {
+    align-content: space-between;
+    align-items: center;
+    display: flex;
+}
+#notification_list .deleter {
+    height: 1em;
+}
+#hasNotification {
+    height: 2em;
+    margin-left: 1em;
+    vertical-align: text-bottom;
+}
+
+.navbar_expanding a.mainmenu-link.nouveau_message {
+    color: #F00;
+}
+.no-link {
+    cursor: not-allowed;
+}
+
+.submenu > a,
+.submenu > span {
+    display: block;
+}
+.submenu-link + .submenu-link {
+    margin-top: 5px;
+}
+.submenu-separation {
+    border-bottom: 1px solid #f7e9c9a0;
+    margin: 10px auto;
+    width: 80%;
+}
+
+@media screen and (max-width: 1275px) {
+    .navbar_container_block + .navbar_container_block {
+        padding-left: 15px;
+    }
+    .mainmenu-link,
+    .mainmenu-item {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .mainmenu-link,
+    .mainmenu-item {
+        font-size: 16px;
+    }
+}
+
+
+/*corps du post*/
+.postbody {
+    text-align : justify;
+    padding :10px;
+}
+
+/*encadre dernier post*/
+.dernierpost {
+    border-left:5px solid #1a1209;
+    border-right:50px solid #1a1209;
+    border-top:1px solid #1a1209;
+    border-bottom:1px solid #1a1209;
+    margin-top:0;
+    margin-bottom:-30px;
+    margin-right:10px;
+    padding: 5px;
+    padding-top:15px;
+    height:50px;
+    width:150px;
+}
+
+/*compteur messages et sujets*/
+.messagesetposts {
+    color: #1a1209;
+    margin-left:-60px;
+}
+
+.messagesetposts_dernierpost {
+    margin-top:-20px;
+}
+
+/*mini avatars*/
+.lastpost-avatar {
+    margin-top:-42px;
+    margin-left:165px;
+}
+
+.lastpost-avatar img {
+    width: 45px;
+    height: 72px;
+}
+
+
+/*titre de categorie*/
+.titre_categorie{
+    margin-top:-65px;
+}
+
+/*liens de categories en dessous de descr*/
+.liens_categories {
+    width:580px;
+    margin-bottom:10px;
+}
+/* o Images des nouveaux messages*/
+.liens_categories > a > img {
+    margin-right: 5px;
+}
+
+/*zone description des categories*/
+.descr {
+    margin-top:-75px;
+    padding-bottom:10px;
+    height:80px;
+    width :600px;
+}
+
+/* Partenaires */
+.partenaire_logo {
+    height: 35px;
+    opacity: 0.2;
+}
+.partenaire_logo:focus,
+.partenaire_logo:hover {
+    opacity: 1;
+}
+
+/* Liens du footer */
+#page-footer .gen a {
+    color: #664c32;
+    font-size: 12px;
+}
+#page-footer .gen a:focus,
+#page-footer .gen a:hover {
+    color: #FFF;
+}
+
+/* */
+.erreur {
+    border-bottom: 1px solid #D00;
+    color: #D00;
+}
+
+/********** Récompenses sur le profil **********/
+/* Mon Profil */
+#list_awards.catBottom {
+    background-color: #000 !important;
+}
+/* Profil public */
+.awards_module .catLeft,
+#profile-advanced-details .module-title {
+    background: unset;
+    border: unset;
+}
+.awards_module .row1 {
+    background-color: #000;
+}
+/* Global */
+div.award {
+    border: unset;
+}
+
+/****************************************** MISE EN PAGE ******************************************/
+
+/* boutons haut/bas */
+.navTopBottom {
+    cursor: pointer;
+}
+
+/* Séparateur de signature */
+.signature_div center:first-of-type > img {
+    filter: brightness(50%);
+}
+
+/******************************************** Structure *******************************************/
+.titre {
+    background:#0f1400;text-align:center; font-size:20px; text-shadow:1px 1px 3px #000;padding:10px;
+}
+.titrerace {
+    background:#12150e;text-align:center; font-size:20px; text-shadow:1px 1px 3px #000;padding:5px;
+}
+.titre-subcat {
+    background-color: #12150E;
+    font-size: 16px;
+    margin: 15px 0 5px;
+    padding: 5px;
+}
+
+.titre2{
+    font-size:16px;font-variant:small-caps;background:url('https://i.servimg.com/u/f37/15/33/58/83/textur10.png'); padding:5px;
+}
+
+.titre3{
+    font-size:14px;text-decoration:underline;
+}
+
+
+.encadre{
+    background:#0f1400;padding:10px;
+}
+
+.corps{
+    padding-left:15px;padding-right:15px;
+}
+
+/* Titre des catégories */
+th.secondarytitle h2,
+.cattitle {
+    font-size: 20px;
+    font-variant: small-caps;
+}
+
+/* Titre des sujets */
+a.topictitle {
+    font-size: 14px;
+}
+
+/* Flex contenus */
+.banner {
+    display: flex;
+    justify-content: center;
+}
+.banner.flex-column {
+    align-items: center;
+}
+
+/******************************************* RÈGLEMENTS *******************************************/
+/******************** Général *******************/
+.rules .rules-categ-underline {
+    border-color: #01a2bb94;
+}
+.rules .rule-frame {
+    background-color: #1B1714;
+    border-color: #002a3c75;
+}
+.rule-enum .rule-enum-subcontent,
+.quest-notum-enum-subitem {
+    padding: 0 22px;
+}
+.rule-enum-subcontent:before,
+.quest-notum-enum-subitem:before {
+    color: #FFF;
+    content: "o";
+    padding-right: 7px;
+}
+.rules .rule-scope {
+    background-color: #716a5987;
+}
+.rule-scope > ul {
+    padding-left: 10px;
+}
+.rule-scope-details {
+    margin: auto;
+    width: 90%;
+}
+.rules .reward-inter {
+    text-align: left;
+}
+
+.rule-em {
+    color: #FFF;
+    font-size: 10px;
+    font-style: italic;
+}
+.rule-example {
+    color: #ACACAC;
+    font-size: 12px;
+}
+
+/****************** Transverse ******************/
+.champ {
+    text-decoration: underline;
+}
+.séparation {
+    border-bottom: 1px solid;
+    height: 15px;
+    margin: auto;
+    width: 50px;
+}
+
+/******************* Factions *******************/
+article.faction {
+    color: #FFF;
+}
+article.faction h1,
+article.faction h2,
+article.faction h3 {
+    background: unset;
+    border-style: solid;
+    border-width: 0;
+    border-bottom-width: 2px;
+    color: var(--color-faction);
+    margin: unset;
+    padding-bottom: 0.5rem;
+    text-align: left;
+}
+article.faction h1 {
+    font-size: 2.5rem;
+    line-height: 2rem;
+    text-align: center;
+}
+article.faction h2 {
+    font-size: 1.75rem;
+    line-height: 1rem;
+    padding-left: 2rem;
+}
+article.faction h3 {
+    padding-left: 1rem;
+}
+
+/******************* Nordiens *******************/
+.rules-nord .rule-frame {
+    background-color: #499ab163;
+}
+.rules-nord .rule-scope {
+    background-color: #648e9a5c;
+}
+
+/***************** Djöllfulins ******************/
+.rules-djöllfulin .rule-frame {
+    background-color: #1919198c;
+    border-color: #6100008c;
+}
+.rules-djöllfulin .rule-title {
+    border-color: #6100008c;
+}
+.rules-djöllfulin .rule-scope {
+    /*background-color: #648e9a5c;*/
+}
+
+/*********** Contact ***********/
+.contact .rules-categ-underline {
+    border-color: #b75b00;
+}
+
+/********************* Description des races *********************/
+.race-description-image {
+    border:1px solid;
+    float:left;
+    margin:10px;
+}
+.race-description-contenu {
+    min-height: 190px;
+    margin-bottom: 10px;
+}
+
+/********************* Tableaux pour la section des Règles *********************/
+.table-rules {
+    text-align: center;
+}
+.table-rules th,
+.table-rules td {
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+}
+.tutoriel-table-head {
+    text-align: center;
+}
+
+/********************* Event *********************/
+.event-contexte {
+    border-bottom: 2px solid #413425;
+    color: #ccc7ba;
+    font-style: italic;
+    margin: 10px 20px;
+    padding: 0 30px 15px;
+}
+.event-progression {
+    margin: auto;
+    text-align: center;
+    width: 400px;
+}
+.event-progression + .event-progression {
+    margin-top: 20px;
+}
+.event-progression-titre {
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.event-progression-barre {
+    border: 1px solid;
+    height: 20px;
+}
+.event-progression-barre > div {
+    color: #000;
+    font-size: 12px;
+    height: 100%;
+}
+
+/********************* Convergence *********************/
+.convergence-color {
+    color: var(--color-convergence);
+}
+.convergence-dark-color {
+    color: var(--color-convergence-dark);
+}
+.convergence :is(h1, h2) {
+    color: #000;
+    font-family: 'Metamorphous', cursive;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 5px var(--color-convergence);
+}
+.convergence h1 {
+    font-size: 3em;
+}
+.convergence h2 {
+    font-size: 2em;
+}
+.convergence .corps,
+.convergence .histoire {
+    margin: 0 auto;
+    padding: 0.5em 2rem 1em;
+    width: 700px;
+}
+.convergence .corps {
+    border-color: var(--color-convergence);
+    border-style: solid;
+    border-width: 0 0 2px 2px;
+}
+.convergence .histoire {
+    color: var(--color-convergence-dark);
+    font-family: 'Metamorphous', cursive;
+}
+.convergence .color-event {
+    color: var(--color-convergence-dark);
+    font-family: 'Metamorphous', cursive;
+    text-align: left;
+    text-shadow: 1px 1px 5px var(--color-convergence);
+}
+
+/********************* Factions / Guildes / Réputations *********************/
+span.faction,
+strong.faction,
+.titre.faction,
+.titrerace.faction,
+.soustitre.faction {
+    color: var(--color-faction); !important;
+}
+span.co,
+strong.co,
+.titre.co,
+.titrerace.co,
+.soustitre.co,
+span.congrégation-ombre,
+strong.congrégation-ombre,
+.titre.congrégation-ombre,
+.titrerace.congrégation-ombre,
+.soustitre.congrégation-ombre {
+    color: var(--color-congrégation_ombre); !important;
+}
+.co,
+.congrégation-ombre {
+    --color-faction: var(--color-congrégation_ombre);
+}
+span.garde-zéphyr,
+strong.garde-zéphyr,
+.titre.garde-zéphyr,
+.titrerace.garde-zéphyr,
+.soustitre.garde-zéphyr {
+    color: var(--color-garde_zéphyr); !important;
+}
+.garde-zéphyr {
+    --color-faction: var(--color-garde_zéphyr);
+}
+span.gardiens,
+strong.gardiens,
+.titre.gardiens,
+.titrerace.gardiens,
+.soustitre.gardiens {
+    color: var(--color-gardiens); !important;
+}
+.gardiens {
+    --color-faction: var(--color-gardiens);
+}
+span.khazariens,
+strong.khazariens,
+.titre.khazariens,
+.titrerace.khazariens,
+.soustitre.khazariens {
+    color: var(--color-khazariens); !important;
+}
+.khazariens {
+    --color-faction: var(--color-khazariens);
+}
+span.milice,
+strong.milice,
+.titre.milice,
+.titrerace.milice,
+.soustitre.milice {
+    color: var(--color-milice); !important;
+}
+.milice {
+    --color-faction: var(--color-milice);
+}
+span.pirates,
+strong.pirates,
+.titre.pirates,
+.titrerace.pirates,
+.soustitre.pirates {
+    color: var(--color-pirates); !important;
+}
+.pirates {
+    --color-faction: var(--color-pirates);
+}
+
+/******************** Titres ********************/
+.joueur-titre-artéfact {
+    color: #FA0 !important;
+}
+.joueur-titre-event,
+.joueur-titre-événement {
+    color: #0FF !important;
+}
+.joueur-titre-faction {
+    color: #080 !important;
+}
+.joueur-titre-irl {
+    color: #E8E !important;
+}
+.joueur-titre-porte_bonheur {
+    color: #FA0 !important;
+}
+
+/******************** Diverses couleurs ********************/
+.hardcore {
+    color: #853894 !important;
+}
+
+.exotique {
+    color: #0FF !important;
+}
+.semi-légendaire,
+.épique {
+    color: #DAA500 !important;
+}
+.légendaire {
+    color: #F0E !important;
+}
+
+.récompense {
+    color: #0C0 !important;
+}
+.enchantement {
+    color: #09F !important;
+}
+
+.important {
+    color: #D00;
+    font-weight: 700;
+}
+
+/**************************************************** COMMUNICATIONS ****************************************************/
+/********************* Phénix *********************/
+.gazette-classement-titre {
+    color: #261A0D;
+    font-size: 20px;
+    text-align: center;
+}
+table.gazette-classement {
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+    width: 700px;
+}
+table.gazette-classement th {
+    color: #FFF3E0;
+    font-size: 18px;
+    padding: 5px;
+    text-shadow: 1px 1px 3px #261A0D;
+}
+table.gazette-classement td {
+    border-color: #261A0D;
+    border-style: solid;
+    border-width: 1px 0;
+    font-size: 12px;
+    padding: 3px;
+}
+table.gazette-classement td + td {
+    border-left-width: 1px;
+}
+table.gazette-classement td[rowspan] {
+    border-right-width: 1px;
+    font-size: 15px;
+    font-weight: 700;
+}
+table.gazette-classement .banni {
+    font-size: 10px;
+    text-decoration: line-through;
+}
+
+/******************************************************************************TEST*********************************************************************************/
+
+a.sceditor-button.active
+{
+    background: #A4BC83 !important;
+}
+a.sceditor-button:hover
+{
+    background: #A4BC83 !important;
+}
+
+.sceditor-container iframe, .sceditor-container textarea {
+    color: #fff !important;
+}
+
+.sceditor-toolbar .sceditor-group,
+.sceditor-toolbar .sceditor-button.sceditor-button-source {
+    background-color: #ddd;
+}
+
+/************************************************FONTAWESOME*********************************************************************************************************/
+
+/* Ajoute Font Awesome aux polices de la textarea pour que les icônes soient visibles */
+.sceditor-container textarea { font-family:Verdana, Arial, Helvetica, sans-serif, FontAwesome !important }
+/* Image du bouton */
+.sceditor-button-fontawesome div { background:url(https://i.servimg.com/u/f19/19/06/98/92/fa-f10.png) !important }
+
+/* Popup */
+.sceditor-fontawesome {
+    width:220px;
+    height:250px;
+    overflow-y:auto;
+}
+
+/* Icônes */
+.sceditor-fontawesome i {
+    color:#333;
+    font-size:20px;
+    text-align:center;
+    cursor:pointer;
+    padding:3px 0;
+    width:25%;
+}
+.sceditor-fontawesome i:hover { color:#333 }
+
+/************************************************TOOLBAR************************************************************************************/
+
+div#fa_toolbar {
+    background-color: #1A1209;  /* Couleur de fond */
+    border-radius: 0 0 50px 50px;  /* Arrondis les bords de la toolbar */
+    box-shadow: 0 0 5px #000000;  /* Affiche une ombre */
+    margin: auto;  /* Centre la toolbar */
+    width: 100%;  /* Modifie la longueur de la toolbar */
+    position: fixed;
+}
+
+div#fa_toolbar div, div#fa_toolbar span {
+    margin: 0 15px;  /* Repositionne correctement le contenu de la toolbar */
+}
+/********************************************COULEUR FICHE***************************************************************************************/
+
+.postdetails.poster-profile textarea {
+    color:#ffffff;}
+
+/******************************************CURSEUR*****************************************************************************************/
+
+body {
+    cursor: url(http://www.k-upload.fr/afficher-fichier-2018-02-18-124dd5ea7cursor.cur), auto;
+}
+a:hover,
+.mainmenu,
+.selectCode,
+[data-link]{
+    cursor: pointer;
+}
+
+/******************************************BACKGROUND QUI S'ADAPTE*****************************************************************************************/
+
+body {
+    background-size: 100% auto;
+}
+
+/************************************************DEFILEMENT HAUT BAS*************************************************************************/
+
+/*fleche haut/bas java et overall_header template*/
+.bouhautbas {
+    bottom: 10px;
+    right: 10px; /* remplacez left par right pour afficher les boutons à droite */
+    position: fixed;
+    z-index: 100;
+}
+
+/*******************************COULEUR MP*********************************************************************************/
+/*$(function(){
+  $('img#i_icon_mini_new_message').parent().css('color','#FF0000');
+});*/
+
+
+/******************************REPONSE RAPIDE AVATAR*************************************************************/
+#av_quickreply img {
+    left: 15px;
+    position: relative;
+    top: 35px;
+}
+
+#av_quickreply {
+    float: left;
+    position : absolute;
+}
+
+/*******************************BOUTON SUIVANT PRECEDENT SUR MP*************************************************************************/
+#navMP{
+    height:16px;
+    height:1rem;
+}
+#navMP>a{
+    display:inline-block;
+    padding-left:.75em;
+    padding-right:.75em;
+    font-size:1.2em;
+    line-height:1.2em;
+    color:#000000;
+    background:#ffffff;
+    text-decoration:none !important;
+    border:1px solid #aaa;
+}
+#navMP>a:hover{
+    color:#ffffff;
+    background:#000000;
+    text-decoration:none !important;
+}
+#navMP-precedent{
+    float:left;
+    border-radius:.6em 0 0 .6em;
+}
+#navMP-suivant{
+    float:right;
+    border-radius:0 1.2em 1.2em 0;
+}
+#navMP-precedent::before{
+    content:"Précédent";
+}
+#navMP-suivant::before{
+    content:"Suivant";
+}
+
+/* Template pour les mentions d'utilisateur */
+.tooltipster-content {
+    padding: 0 !important;
+}
+
+/**************************************************ALERTE****************************************************************************/
+.realTime_alert{
+    background:#FDFDFD no-repeat 10px center;
+    -webkit-background-size:50px;
+    -moz-background-size:50px;
+    -o-background-size:50px;
+    background-size:50px;
+    -webkit-box-shadow:0 0 4px rgba(0,0,0,.6);
+    -moz-box-shadow:0 0 4px rgba(0,0,0,.6);
+    box-shadow:0 0 4px rgba(0,0,0,.6);
+    position:fixed;
+    top:50px;
+    right:20px;
+    min-height:60px;
+    font-size:13px;
+    width:200px;
+    padding:10px 10px 10px 70px;
+    font-family:Helvetica;
+    color:#474747;
+}
+.realTime_alert b{
+    display:block;
+    margin-bottom:5px;
+    font-size:15px;
+}
+.realTime_alert .close{
+    position:absolute;
+    right:10px;
+    top:5px;
+    font-size:15px;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    height:16px;
+    width:16px;
+    text-align:center;
+    line-height:13px;
+    cursor:pointer;
+}
+.realTime_alert .close:hover{
+    color:#FFF;
+    background:#666;
+}
+#ebtzd .tooltip{
+    opacity:0;
+    position:relative;
+    overflow:visible;
+    z-index:100!important;
+    display:inline-block;
+    top:5px;
+    -webkit-transition-duration:500ms;
+    -moz-transition-duration:500ms;
+    -o-transition-duration:500ms;
+    transition-duration:500ms;
+    background:rgba(0, 0, 0, .8);
+    padding:10px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    font-family:Helvetica;
+    letter-spacing:1px;
+    font-size:13px;
+    width:300px;
+    color:#fff;
+}
+
+/*********CURSEUR LARA***********************/
+/*body {
+    cursor: url(https://www.aht.li/3577718/FLEtest.cur), auto;
+}
+a:hover,
+.mainmenu,
+.selectCode,
+[data-link] {
+    cursor: url(https://www.aht.li/3577762/FLEtorange.cur), auto;
+}*/
+
+/***********DISPARITION DU TITRE***************/
+
+.maintitle {
+    display: none;
+}
+
+/**********BOX BARRE DE DEFILEMENT*****************/
+.box {
+    border: 1px solid #333333;
+    width: 500px;
+    height: 200px;
+    overflow-y: scroll;
+}
+/************NOUVELLE BALISE****************/
+.notice {
+    background: url(https://i.servimg.com/u/f14/20/04/68/98/vwry0m10.png) repeat-x 0 0;
+    color: #FFF;
+    width: 83%;
+    font-weight: normal;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.4);
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.4);
+    box-shadow: 1px 1px 2px rgba(0,0,0,.4);
+    position: relative;
+    left: 34px;
+}
+.notice p {
+    margin-bottom: 1.5em;
+}
+.notice p:last-child {
+    margin-bottom: 0;
+}
+.notice h5 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: .65em;
+    margin-top: 2px;
+}
+.notice:before {
+    content: "";
+    background: url(https://i.servimg.com/u/f14/20/04/68/98/pclyd510.png) no-repeat 100% 0;
+    width: 33px;
+    height: 40px;
+    position: absolute;
+    left: -34px;
+    top: 2px;
+}
+.notice-success {
+    background-color: #EEF4D4;
+    color: #596C26;
+    border: 1px solid #8FAD3D;
+}
+.notice-success:before {
+    background-position: 100% 0;
+}
+.notice-warn {
+    background-color: #FFEA97;
+    color: #796100;
+    border: 1px solid #E1B500;
+}
+.notice-warn:before {
+    background-position: 100% -800px;
+}
+.notice-alert {
+    background-color: #EFCEC9;
+    color: #933628;
+    border: 1px solid #AE3F2F;
+}
+.notice-alert:before {
+    background-position: 100% -400px;
+}
+.notice-info {
+    background-color: #C6D8F0;
+    color: #285797;
+    border: 1px solid #4381CD;
+}
+.notice-info:before {
+    background-position: 100% -1200px;
+}
+/*************CURSEUR NOEL************************/
+body {
+    cursor: url(https://sd-1.archive-host.com/membres/up/132720629421430912/FDF/Decoration/Noel/snowman.cur), auto;
+}
+/***********fond message**********************/
+
+.sceditor-container iframe, .sceditor-container textarea {
+    background:url(https://2img.net/i/fa/empty.gif)!important;}
