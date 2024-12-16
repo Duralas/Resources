@@ -44,51 +44,53 @@
 
     &_block {
       display: table;
-    }
 
-    .mainmenu {
-      display: table-row;
-      cursor: pointer;
+      .mainmenu {
+        display: table-row;
+        cursor: pointer;
 
-      &-item {
-        @extend %__forum_components_navbar_titre_item;
-      }
-
-      &-link {
-        @extend %__forum_components_navbar_titre_item;
-
-        &:focus,
-        &:hover {
-          @extend %__forum_components_navbar_lien_mise_en_évidence;
+        &-item {
+          @extend %__forum_components_navbar_titre_item;
         }
 
-        + .submenu-link {
-          margin-top: 5px;
+        &-link {
+          @extend %__forum_components_navbar_titre_item;
+
+          &:focus,
+          &:hover {
+            @extend %__forum_components_navbar_lien_mise_en_évidence;
+          }
         }
       }
     }
+  }
 
-    .submenu {
-      position: fixed;
-      top: unset;
-      left: unset;
-      right: unset;
-      bottom: unset;
-      padding: 5px 10px;
-      display: none;
-      background-color: #1A1209;
-      text-align: center;
+  .submenu {
+    position: fixed;
+    top: unset;
+    left: unset;
+    right: unset;
+    bottom: unset;
+    padding: 5px 10px;
+    display: none;
+    background-color: #1A1209;
+    text-align: center;
 
-      > a,
-      > span {
-        display: block;
+    > a,
+    > span {
+      display: block;
+    }
+
+    &-link {
+      + .submenu-link {
+        margin-top: 5px;
       }
+    }
 
-      &-séparation {
-        border-bottom: 1px solid #f7e9c9a0;
-        margin: 10px auto;
-        width: 80%;
-      }
+    &-separation {
+      border-bottom: 1px solid #f7e9c9a0;
+      margin: 10px auto;
+      width: 80%;
     }
   }
 
