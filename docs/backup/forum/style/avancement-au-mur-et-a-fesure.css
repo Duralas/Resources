@@ -1,6 +1,6 @@
 /* Surcharge des styles du forum */
 
-/* -- 1. Chatbox -- */
+/* -- Chatbox -- */
 #frame_chatbox {
     font-family: 'Philosopher';
 }
@@ -29,7 +29,7 @@ body.chatbox {
     word-wrap: break-word;
 }
 
-/* -- 2. Liens -- */
+/* -- Liens -- */
 a {
     text-decoration: none !important;
 }
@@ -38,8 +38,15 @@ a:hover {
     text-decoration: none !important;
 }
 
-/* -- 3. Barre horizontale -- */
+/* -- Barre horizontale -- */
 hr { border: 1px solid #A4BC83; }
+
+/* -- Couleurs -- */
+.code,
+.selectCode,
+.quote {
+    color:#B0C4DE;
+}
 
 
 @import url('https://fonts.googleapis.com/css?family=Philosopher');
