@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
+
 //region    -- Chatbox
 #frame_chatbox {
   font-family: 'Philosopher';
@@ -35,6 +37,31 @@
   }
 }
 //endregion -- Chatbox
+
+//region    -- Qui est en ligne ?
+.wio {
+  margin-top: 30px;
+
+  &:hover {
+    .cattitle {
+      @extend .hover-surbrillance;
+    }
+  }
+
+  .catHead {
+    text-align: center;
+  }
+  .catHead,
+  .cattitle {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .row1 {
+    background-image: url("https://i.ibb.co/rsPnGGR/wio-content-texture.jpg");
+  }
+}
+//endregion -- Qui est en ligne ?
 
 // --------------------------------------------------
 
