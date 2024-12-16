@@ -1,3 +1,14 @@
+/* Surcharge des styles du forum */
+
+/* -- 1. Liens ** */
+a {
+    text-decoration: none !important;
+}
+a:hover {
+    color: #FFF !important;
+    text-decoration: none !important;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Philosopher');
 
 
