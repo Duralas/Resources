@@ -1,6 +1,35 @@
 /* Surcharge des styles du forum */
 
-/* -- 1. Liens ** */
+/* -- 1. Chatbox -- */
+#frame_chatbox {
+    font-family: 'Philosopher';
+}
+#chatbox_header .cattitle strong {
+    font-size: 0;
+}
+#chatbox_header .cattitle:before {
+    content: "Bienvenue à la Taverne de Dùralas";
+    font-family: 'Philosopher';
+    font-size: 15px;
+}
+
+.msg span[style*="green"] strong {
+    color: #77b300;
+    font-variant: small-caps;
+}
+.msg span[style*="red"] strong {
+    color: #7d738c;
+    font-variant: small-caps;
+}
+
+body.chatbox {
+    overflow-y: unset !important;
+}
+#chatbox {
+    word-wrap: break-word;
+}
+
+/* -- 2. Liens -- */
 a {
     text-decoration: none !important;
 }

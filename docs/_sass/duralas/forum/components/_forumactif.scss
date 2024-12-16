@@ -1,43 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Philosopher');
 
-//region    -- Chatbox
-#frame_chatbox {
-  font-family: 'Philosopher';
-}
-
-#chatbox {
-  word-wrap: break-word;
-
-  &_header {
-    .cattitle {
-      &:before {
-        content: "Bienvenue à la Taverne de Dùralas";
-        font-family: 'Philosopher';
-        font-size: 15px;
-      }
-
-      strong {
-        font-size: 0;
-      }
-    }
-  }
-}
-.chatbox {
-  overflow-y: unset !important;
-}
-
-.msg {
-  span[style*="green"] strong {
-    color: #77b300;
-    font-variant: small-caps;
-  }
-  span[style*="red"] strong {
-    color: #7d738c;
-    font-variant: small-caps;
-  }
-}
-//endregion -- Chatbox
-
 //region    -- Qui est en ligne ?
 .wio {
   margin-top: 30px;
