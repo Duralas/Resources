@@ -1,0 +1,140 @@
+.drls_categ {
+  padding: 0.25em 1em 0 0;
+  display: flex;
+  justify-content: space-between;
+
+  &_panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 700px;
+
+    &_header {
+      padding-bottom: 0.25em;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      &_stats {
+        font-size: 0.6em;
+      }
+    }
+
+    &_content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      font-size: smaller;
+
+      &_sublinks {
+        padding: 0.25em 8px;
+        border-top-right-radius: 5px;
+        margin-top: auto;
+        width: max-content;
+        max-width: 684px;
+        background-image: url("https://i.ibb.co/qDNZz1z/forumline-texture.jpg");
+        opacity: 0.8;
+
+        &:empty {
+          padding: unset;
+        }
+      }
+
+      //region    ----- Bannière des zones + description
+      .zone-banner {
+        &.has_desc {
+          &:hover {
+            .zone-desc {
+              opacity: 1;
+              z-index: 1;
+              transition: 1.5s;
+            }
+
+            img {
+              opacity: 0.20;
+              transition: 1.5s;
+            }
+          }
+
+          .zone-desc {
+            transition: 1.5s;
+          }
+
+          img {
+            transition: 1.5s;
+          }
+        }
+
+        + .drls_categ_panel_content_sublinks {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+
+        .zone-desc {
+          position: absolute;
+          top: 1.5em;
+          height: calc(100% - 3.5em);
+          width: 100%;
+          opacity: 0;
+          overflow-y: auto;
+          text-align: justify;
+          font-size: 0.85em;
+
+          p {
+            padding: 0 12.5%;
+            margin: 0.5em 0.5em 0;
+          }
+          > p {
+            &:first-of-type {
+              margin-top: 0.75em;
+            }
+            &:last-of-type {
+              margin-bottom: 0.75em;
+            }
+          }
+        }
+      }
+
+
+      //endregion ----- Bannière des zones + description
+    }
+  }
+
+  &_last_activity {
+    padding-left: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 15%;
+    text-align: center;
+
+    &_desc {
+      font-size: 0.6em;
+
+      > span > a:first-of-type {
+        // Titre du RP du dernier post
+        font-size: 1.25em;
+      }
+    }
+
+    &_image {
+      img {
+        border-radius: 5px;
+        height: 72px;
+        width: 45px;
+      }
+    }
+  }
+}
+
+
+/* ----- Zones : bannière et description ----- */
+.zone-banner.has_desc .zone-desc,
+.zone-banner.has_desc:hover .zone-desc,
+.zone-banner.has_desc img,
+.zone-banner.has_desc:hover img {
+  transition: 1.5s;
+}
