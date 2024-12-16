@@ -335,10 +335,6 @@ div.award {
 
 /****************************************** MISE EN PAGE ******************************************/
 
-/* boutons haut/bas */
-.navTopBottom {
-    cursor: pointer;
-}
 
 /* Séparateur de signature */
 .signature_div center:first-of-type > img {
@@ -848,13 +844,6 @@ body {
 
 /************************************************DEFILEMENT HAUT BAS*************************************************************************/
 
-/*fleche haut/bas java et overall_header template*/
-.bouhautbas {
-    bottom: 10px;
-    right: 10px; /* remplacez left par right pour afficher les boutons à droite */
-    position: fixed;
-    z-index: 100;
-}
 
 /*******************************COULEUR MP*********************************************************************************/
 /*$(function(){
