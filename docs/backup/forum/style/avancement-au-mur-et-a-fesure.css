@@ -227,16 +227,6 @@ td.catLeft {
     width :600px;
 }
 
-/* Partenaires */
-.partenaire_logo {
-    height: 35px;
-    opacity: 0.2;
-}
-.partenaire_logo:focus,
-.partenaire_logo:hover {
-    opacity: 1;
-}
-
 /* Liens du footer */
 #page-footer .gen a {
     color: #664c32;
