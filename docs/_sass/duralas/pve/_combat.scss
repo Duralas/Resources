@@ -1,0 +1,23 @@
+.combat {
+  &-séparation {
+    border-bottom: 1px solid #CDCDCD;
+    margin: 0 auto 18px;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &-vaincu {
+    font-style: italic;
+    text-decoration: line-through;
+
+    span:first-child,
+    strong:first-child {
+      text-decoration: none;
+    }
+
+    .vitalité {
+      color: #D00 !important;
+    }
+  }
+}

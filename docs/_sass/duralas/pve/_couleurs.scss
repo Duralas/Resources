@@ -1,0 +1,75 @@
+%__pve_couleurs_texte_gras {
+  font-weight: 700;
+}
+
+//region    -- Caractéristiques
+.vitalité {
+  @extend %__pve_couleurs_texte_gras;
+
+  color: #090 !important;
+}
+.vitesse {
+  @extend %__pve_couleurs_texte_gras;
+
+  color: #FC0 !important;
+}
+.dégâts {
+  @extend %__pve_couleurs_texte_gras;
+
+  color: #F00 !important;
+}
+
+.aura {
+  @extend %__pve_couleurs_texte_gras;
+
+  color: #1E90FF !important;
+}
+
+.stat-bonus {
+  color: #0A0 !important;
+}
+.stat-malus {
+  color: #A00 !important;
+}
+//endregion -- Caractéristiques
+
+//region    -- États / Altérations / Blessures / etc.
+.alt-sprst {
+  color: #9a9275 !important;
+}
+.feu {
+  @extend %__pve_couleurs_texte_gras;
+
+  color: #E2AA17 !important;
+}
+.poison {
+  @extend %__pve_couleurs_texte_gras;
+
+  color: #60F !important;
+}
+.saignement {
+  @extend %__pve_couleurs_texte_gras;
+
+  color: #D00 !important;
+}
+.venin {
+  @extend %__pve_couleurs_texte_gras;
+
+  color: #CE0 !important;
+}
+//endregion -- États / Altérations / Blessures / etc.
+
+//region    -- Entités
+.archi-boss,
+.boss {
+  color: #D00 !important;
+}
+
+.commandant {
+  color: #075ac1 !important;
+}
+
+.invocation {
+  color: #666 !important;
+}
+//endregion -- Entités

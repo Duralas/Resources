@@ -3,6 +3,7 @@
 
 @import
   "duralas/colors",
+  "duralas/helpers/colors",
   "duralas/helpers/display",
   "duralas/helpers/liens"
 ;
@@ -36,6 +37,15 @@
   "duralas/economie/shop",
   "duralas/economie/boutique";
 //endregion -- Économie
+
+//region    -- PVE
+@import
+  "duralas/pve/couleurs",
+  "duralas/pve/bestiaire",
+  "duralas/pve/combat",
+  "duralas/pve/capacité_spéciale"
+;
+//endregion -- PVE
 
 //region    -- Quêtes
 @import

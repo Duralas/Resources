@@ -1,0 +1,26 @@
+.bestiaire {
+  &-nom {
+    color: #ddd;
+    font-size: 15px;
+    font-weight: 700;
+    text-shadow: 0 0 6px #aaaaaa;
+  }
+
+  &-caractéristique,
+  &-champ,
+  .caractéristique {
+    text-decoration: underline;
+  }
+
+  &-séparation {
+    border-bottom: 1px solid;
+    margin: auto;
+    height: 15px;
+    width: 50px;
+  }
+}
+
+// Si race spécifique => pas de text-shadow
+[class^="bestiaire-nom "] {
+  text-shadow: none;
+}

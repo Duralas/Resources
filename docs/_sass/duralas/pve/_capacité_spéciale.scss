@@ -1,0 +1,333 @@
+//region    -- Placeholders
+%__pve_capacité_spéciale_affichage_atténué {
+  color: #C7C4BB;
+  font-size: smaller;
+  font-style: italic;
+  transition: 1s;
+}
+%__pve_capacité_spéciale_affichage_réinitialisé {
+  font-size: inherit;
+  font-style: initial;
+  text-decoration: none;
+  transition: 1s;
+}
+%__pve_capacité_spéciale_affichage_barré {
+  text-decoration: line-through;
+}
+%__pve_capacité_spéciale_affichage_taille_normale {
+  font-size: inherit;
+}
+
+%__pve_capacité_spéciale_affichage_after {
+  font-weight: 700;
+  padding-left: 5px;
+}
+%__pve_capacité_spéciale_affichage_after_style_normal {
+  color: #DBCCA8;
+  display: inline-block;
+  font-style: initial;
+}
+%__pve_capacité_spéciale_affichage_after_actif {
+  color: #4A1;
+  content: "[Active]";
+}
+%__pve_capacité_spéciale_affichage_after_inactif {
+  color: #A11;
+  content: "[Inactive]";
+}
+//endregion -- Placeholders
+
+// --------------------------------------------------
+
+//region    -- Comportement commun
+.capacité_spéciale {
+  &_ligne {
+    margin: 0 1em;
+    list-style: none;
+  }
+
+  &.active {
+    &:after {
+      @extend %__pve_capacité_spéciale_affichage_after;
+      @extend %__pve_capacité_spéciale_affichage_after_actif;
+    }
+  }
+
+  &.annulée {
+    @extend %__pve_capacité_spéciale_affichage_atténué;
+    @extend %__pve_capacité_spéciale_affichage_barré;
+
+    &:hover {
+      @extend %__pve_capacité_spéciale_affichage_réinitialisé;
+    }
+    &:after {
+      @extend %__pve_capacité_spéciale_affichage_after;
+      @extend %__pve_capacité_spéciale_affichage_after_style_normal;
+
+      content: "{Annulée}";
+    }
+  }
+
+  &.bloquée {
+    @extend %__pve_capacité_spéciale_affichage_atténué;
+    @extend %__pve_capacité_spéciale_affichage_barré;
+
+    &:hover {
+      @extend %__pve_capacité_spéciale_affichage_réinitialisé;
+    }
+    &:after {
+      @extend %__pve_capacité_spéciale_affichage_after;
+      @extend %__pve_capacité_spéciale_affichage_after_style_normal;
+
+      content: "{Bloquée}";
+    }
+  }
+
+  &.blocage {
+    @extend %__pve_capacité_spéciale_affichage_atténué;
+    @extend %__pve_capacité_spéciale_affichage_taille_normale;
+
+    color: #AB4034;
+
+    &:before {
+      content: "[Bloquée jusqu'au tour";
+      padding-right: 3px;
+    }
+    &:after {
+      content: "]";
+    }
+  }
+
+  &.imblocable {
+    &:after {
+      @extend %__pve_capacité_spéciale_affichage_after;
+
+      color: #49B;
+      content: "[Imblocable]";
+    }
+  }
+
+  &.inactive {
+    @extend %__pve_capacité_spéciale_affichage_atténué;
+
+    &:after {
+      @extend %__pve_capacité_spéciale_affichage_after;
+      @extend %__pve_capacité_spéciale_affichage_after_inactif;
+    }
+  }
+
+  &.non_applicable,
+  &.non_réalisable {
+    @extend %__pve_capacité_spéciale_affichage_atténué;
+    @extend %__pve_capacité_spéciale_affichage_barré;
+
+    &:hover {
+      @extend %__pve_capacité_spéciale_affichage_réinitialisé;
+    }
+    &:after {
+      @extend %__pve_capacité_spéciale_affichage_after;
+      @extend %__pve_capacité_spéciale_affichage_after_style_normal;
+
+      content: "[Conditions non remplies]";
+    }
+  }
+
+  &.utilisée {
+    @extend %__pve_capacité_spéciale_affichage_atténué;
+    @extend %__pve_capacité_spéciale_affichage_barré;
+
+    &:hover {
+      @extend %__pve_capacité_spéciale_affichage_réinitialisé;
+    }
+    &:after {
+      @extend %__pve_capacité_spéciale_affichage_after;
+      @extend %__pve_capacité_spéciale_affichage_after_style_normal;
+
+      content: "{Utilisée}";
+    }
+  }
+}
+//endregion -- Comportement commun
+
+// --------------------------------------------------
+
+//region    -- Arlequin
+.capacité_spéciale {
+  &.deck {
+    + .capacité_spéciale.deck {
+      margin-top: 5px;
+    }
+
+    > .lame,
+    > .capacité_spéciale {
+      margin-left: 7px;
+    }
+  }
+
+  .lame {
+    &:before {
+      padding: 0 1px;
+      margin-right: 5px;
+    }
+
+    &.cœur,
+    &.coeur {
+      &:before {
+        background-color: #FFF;
+        content: "♥";
+        color: #D00;
+      }
+    }
+    &.carreau {
+      &:before {
+        background-color: #FFF;
+        content: "♦";
+        color: #D00;
+      }
+    }
+    &.trèfle {
+      &:before {
+        background-color: #FFF;
+        content: "♣";
+        color: #000;
+      }
+    }
+    &.pique {
+      &:before {
+        background-color: #FFF;
+        content: "♠";
+        color: #000;
+      }
+    }
+    &.royal {
+      &:before {
+        background-color: #FFF;
+        content: "Royal";
+        color: #51C;
+      }
+    }
+
+    &.utilisée {
+      @extend %__pve_capacité_spéciale_affichage_atténué;
+      @extend %__pve_capacité_spéciale_affichage_barré;
+
+      &:hover {
+        @extend %__pve_capacité_spéciale_affichage_réinitialisé;
+      }
+      &:after {
+        @extend %__pve_capacité_spéciale_affichage_after;
+        @extend %__pve_capacité_spéciale_affichage_after_style_normal;
+
+        content: "{Utilisée}";
+      }
+    }
+
+    &.active {
+      &:after {
+        @extend %__pve_capacité_spéciale_affichage_after;
+        @extend %__pve_capacité_spéciale_affichage_after_actif;
+      }
+    }
+    &:not(.active) {
+      @extend .d-none;
+    }
+
+    &.inactive {
+      &:after {
+        @extend %__pve_capacité_spéciale_affichage_after_inactif;
+      }
+    }
+  }
+}
+//endregion -- Arlequin
+
+//region    -- Conjurateur
+.capacité_spéciale {
+  &.exorcisme {
+    @extend %__pve_capacité_spéciale_affichage_atténué;
+    @extend %__pve_capacité_spéciale_affichage_taille_normale;
+
+    color: #7D48CD;
+
+    &:before {
+      content: "[Exorcisée par";
+      padding-right: 3px;
+    }
+    &:after {
+      content: "]";
+    }
+  }
+
+  &.dérobade {
+    @extend %__pve_capacité_spéciale_affichage_atténué;
+    @extend %__pve_capacité_spéciale_affichage_taille_normale;
+
+    color: #9E8144;
+
+    &:before {
+      content: "[Dérobée par";
+      padding-right: 3px;
+    }
+    &:after {
+      content: "]";
+    }
+  }
+}
+//endregion -- Conjurateur
+
+//region    -- Virtuose
+.capacité_spéciale {
+  &.partition {
+    + .capacité_spéciale.partition {
+      margin-top: 5px;
+    }
+  }
+
+  &.en_recharge {
+    @extend %__pve_capacité_spéciale_affichage_atténué;
+    @extend %__pve_capacité_spéciale_affichage_taille_normale;
+  }
+  > .en_recharge {
+    color: #D3733F;
+
+    &:before {
+      content: "[Effet ré-activable au tour";
+      padding-right: 3px;
+    }
+    &:after {
+      content: "]";
+    }
+  }
+
+  .recharge {
+    color: #E0993C;
+
+    &:before {
+      content: "[Effet ré-activable tous les";
+      padding-right: 3px;
+    }
+    &:after {
+      content: "tours]";
+      padding-left: 3px;
+    }
+  }
+
+  &.en_recharge,
+  &.bloquée,
+  &.non_réalisable {
+    > .recharge {
+      @extend .d-none;
+    }
+  }
+  &:not(.en_recharge) {
+    > .en_recharge {
+      @extend .d-none;
+    }
+  }
+  &:not(.blocage) {
+    > .blocage {
+      @extend .d-none;
+    }
+  }
+}
+//endregion -- Virtuose

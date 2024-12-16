@@ -1,0 +1,108 @@
+//region    -- Races
+.abyssal {
+  color: $color-abyssal !important;
+}
+.djöllfulin {
+  color: $color-djöllfulin !important;
+}
+.elfe {
+  color: $color-elfe !important;
+}
+.entomothrope {
+  color: $color-entomothrope !important;
+}
+.géant {
+  color: $color-géant !important;
+}
+.humain {
+  color: $color-humain !important;
+}
+.hybride,
+.centaure,
+.minotaure,
+.satyre {
+  color: $color-hybride !important;
+}
+.naga {
+  color: $color-naga !important;
+}
+.nain {
+  color: $color-nain !important;
+}
+.gobelin,
+.orc,
+.peau-verte {
+  color: $color-peau-verte !important;
+}
+.stryge-blanc {
+  color: $color-stryge-blanc !important;
+}
+.stryge-noir {
+  color: $color-stryge-noir !important;
+}
+.thérianthrope,
+.loup-garou {
+  color: $color-thérianthrope !important;
+}
+.vampire {
+  color: $color-vampire !important;
+}
+//endregion -- Races
+
+//region    -- Classes
+.arlequin {
+  color: $color-arlequin;
+}
+.corrompu {
+  color: $color-corrompu;
+}
+.technophile {
+  color: $color-technophile;
+}
+.virtuose {
+  color: $color-virtuose;
+}
+//endregion -- Classes
+
+//region    -- Guildes
+.dragonniers {
+  color: $color-dragonniers !important;
+}
+.espion {
+  color: $color-espion;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+//endregion -- Guildes
+
+//region    -- Groupes
+.nordien {
+  color: $color-nordien !important;
+}
+//endregion -- Groupes
+
+//region    -- Créatures
+.perrack {
+  color: $color-perrack !important;
+}
+.skarnien {
+  color: $color-skarnien !important;
+}
+//endregion -- Créatures
+
+//region    -- Entités spéciales
+.pnj {
+  color: $color-pnj !important;
+}
+//endregion -- Entités spéciales
+
+//region    -- État
+.banni,
+.prisonnier,
+.blessé,
+.mort {
+  color: $color-mort !important;
+  font-style: italic;
+}
+//endregion -- État
+
+
